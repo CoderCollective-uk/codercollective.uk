@@ -1,0 +1,72 @@
+{
+  "name": "codercollective.uk",
+  "version": "1.0.0",
+  "description": "The codercollective.uk website.",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "CC BY-NC-ND",
+  "devDependencies": {
+    "babel-preset-solid": "^1.8.15",
+    "eslint": "^8.57.0",
+    "eslint-plugin-solid": "^0.13.1",
+    "solid-devtools": "^0.29.2",
+    "vite": "^5.0.11",
+    "vite-plugin-solid": "^2.8.2",
+    "@babel/eslint-parser": "^7.23.10",
+    "@babel/preset-env": "^7.23.9",
+    "@eslint/js": "^8.57.0"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "overrides": [
+      {
+        "env": {
+          "node": true
+        },
+        "files": [
+          "*.js",
+          "*.jsx"
+        ],
+        "parserOptions": {
+          "sourceType": "module"
+        }
+      }
+    ],
+    "rules": {},
+    "plugins": [
+      "solid"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:solid/recommended"
+    ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": false,
+      "babelOptions": {
+        "babelrc": false,
+        "configFile": false,
+        "presets": [
+          [
+            "solid",
+            {
+              "generate": "dom",
+              "hydratable": true
+            }
+          ]
+        ]
+      }
+    }
+  }
+}
