@@ -10,7 +10,7 @@ Project is compiled into the docs folder to be compatible with github pages. See
 Node, npm and git are required to work on this project.
 
 1. Install Node via nvm (skip this if you already have node installed): 
-[https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+[Install nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
 2. Clone and navigate to this repo.
 ```bash
 git clone git@github.com:CoderCollective-uk/codercollective.uk.git
