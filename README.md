@@ -1,34 +1,49 @@
-## Usage
+# CoderCollective.uk
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+## Stack 🥞
+ - SolidJS
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+Project is compiled into the docs folder to be compatible with github pages. See [Build](#Build)
 
+## Setup 📋
+
+Node, npm and git are required to work on this project.
+
+1. Install Node via nvm (skip this if you already have node installed): 
+[https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+2. Clone and navigate to this repo.
 ```bash
-$ npm install # or pnpm install or yarn install
+git clone git@github.com:CoderCollective-uk/codercollective.uk.git
+```
+3. Install requirements with:
+```bash
+npm i
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## Dev and Build Commands 🛠️
 
-## Available Scripts
+### Dev Server
+To start the local development server, run the following command:
+```bash
+npm run dev
+```
 
-In the project directory, you can run:
+### Build
+SolidJS will compile the project in the src dir into the docs dir. 
+This has been set up this way to work with github pages.
 
-### `npm run dev` or `npm start`
+To build from dev into docs, run the following command:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm run build
+```
 
-The page will reload if you make edits.<br>
+## License 📜
 
-### `npm run build`
+codercollective.uk © 2024 by the Coder Collective contributors is licensed under CC BY-NC-ND 4.0.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+![](https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1)
+![](https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1)
+![](https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1)
+![](https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1)
