@@ -28,6 +28,16 @@ To start the local development server, run the following command:
 npm run dev
 ```
 
+### Lint
+
+ESLint is setup with this project to find any potential errors. To use, run the following command:
+
+```bash
+eslint src
+```
+
+If nothing is returned in the terminal, then you have no errors.
+
 ### Build
 SolidJS will compile the project in the src dir into the docs dir. 
 This has been set up this way to work with github pages.
