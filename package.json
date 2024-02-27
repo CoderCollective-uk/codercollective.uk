@@ -1,7 +1,7 @@
 {
   "name": "codercollective.uk",
   "version": "1.0.0",
-  "description": "The coder collective website.",
+  "description": "The codercollective.uk website.",
   "scripts": {
     "start": "vite",
     "dev": "vite",
